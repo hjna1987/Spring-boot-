@@ -1,0 +1,37 @@
+#### hide sensitive data ###
+#spring.datasource.driverClassName=org.mariadb.jdbc.Driver
+#spring.datasource.url=jdbc:mariadb://localhost:3306/testdb
+#spring.datasource.username=root
+#spring.datasource.password=root
+############################
+
+spring.mvc.view.prefix: /WEB-INF/jsp/
+spring.mvc.view.suffix: .jsp
+
+restTemplate:
+  factory:
+    readTimeout: 5000 
+    connectTimeout: 3000
+  httpClient:
+    maxConnTotal: 100
+    maxConnPerRoute: 5 
+
+logging:
+  path: D:/teamEx_springBoot/dev/log/spring
+  file: log-file  
+  
+---
+spring:
+  profiles: log-windows
+  
+logging:
+  path: D:/teamEx_springBoot/dev/log
+---
+spring:
+  profiles: log-linux
+  
+logging:
+  path: /log/spring/
+
+
+

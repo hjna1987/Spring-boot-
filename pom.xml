@@ -65,6 +65,30 @@
             <artifactId>tomcat-embed-jasper</artifactId>
         </dependency>
 		<!-- 화면연결 -->
+		
+		<!-- SECURITY -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <!-- SECURITY -->
+		
+		<!-- DB Logback -->
+        <dependency>
+            <groupId>org.bgee.log4jdbc-log4j2</groupId>
+            <artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
+            <version>1.16</version>
+        </dependency>
+        <!-- DB Logback -->
+        
+ 		<!-- APACHE HTTP CLIENT -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+        </dependency>
+        <!-- APACHE HTTP CLIENT -->
+
+
 
 	</dependencies>
 
